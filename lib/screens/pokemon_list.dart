@@ -39,7 +39,6 @@ class HomePageState extends State<HomePage> {
         title: Text("Pokemon TCG Lucas Blandin"),
         backgroundColor: Colors.red,
         leading: Icon(Icons.search),
-          actions: [searchBar.getSearchAction(context)]
       ),
       body: pokeHub == null
           ? Center(
