@@ -13,6 +13,7 @@ class HomePage extends StatefulWidget {
 
 class HomePageState extends State<HomePage> {
   var url = "https://raw.githubusercontent.com/Biuni/PokemonGO-Pokedex/master/pokedex.json";
+  //var url = "https://api.pokemontcg.io/v1/cards";
 
   PokeHub pokeHub;
 
@@ -35,8 +36,10 @@ class HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Pokemon TCG"),
+        title: Text("Pokemon TCG Lucas Blandin"),
         backgroundColor: Colors.red,
+        leading: Icon(Icons.search),
+          actions: [searchBar.getSearchAction(context)]
       ),
       body: pokeHub == null
           ? Center(
