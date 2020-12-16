@@ -35,7 +35,7 @@ class PokeDetail extends StatelessWidget {
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: pokemon.type
                     .map((t) => FilterChip(
                     backgroundColor: Colors.amber,
